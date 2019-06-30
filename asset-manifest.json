@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-clicky-game/static/css/main.eb84c139.chunk.css",
+    "main.js": "/react-clicky-game/static/js/main.1e7afda7.chunk.js",
+    "main.js.map": "/react-clicky-game/static/js/main.1e7afda7.chunk.js.map",
+    "runtime~main.js": "/react-clicky-game/static/js/runtime~main.a57faf00.js",
+    "runtime~main.js.map": "/react-clicky-game/static/js/runtime~main.a57faf00.js.map",
+    "static/js/2.3310f33a.chunk.js": "/react-clicky-game/static/js/2.3310f33a.chunk.js",
+    "static/js/2.3310f33a.chunk.js.map": "/react-clicky-game/static/js/2.3310f33a.chunk.js.map",
+    "index.html": "/react-clicky-game/index.html",
+    "precache-manifest.340ae9f08a294a90b3bf558a3741e166.js": "/react-clicky-game/precache-manifest.340ae9f08a294a90b3bf558a3741e166.js",
+    "service-worker.js": "/react-clicky-game/service-worker.js",
+    "static/css/main.eb84c139.chunk.css.map": "/react-clicky-game/static/css/main.eb84c139.chunk.css.map",
+    "static/media/img1.png": "/react-clicky-game/static/media/img1.a01ed5c0.png",
+    "static/media/img10.png": "/react-clicky-game/static/media/img10.bd53bfa7.png",
+    "static/media/img11.png": "/react-clicky-game/static/media/img11.71f8bb50.png",
+    "static/media/img12.png": "/react-clicky-game/static/media/img12.a697dfc0.png",
+    "static/media/img2.png": "/react-clicky-game/static/media/img2.79b524ae.png",
+    "static/media/img3.png": "/react-clicky-game/static/media/img3.592597b2.png",
+    "static/media/img4.png": "/react-clicky-game/static/media/img4.785b2ec8.png",
+    "static/media/img5.png": "/react-clicky-game/static/media/img5.b9cc5006.png",
+    "static/media/img6.png": "/react-clicky-game/static/media/img6.8274d5cf.png",
+    "static/media/img7.png": "/react-clicky-game/static/media/img7.e0f11813.png",
+    "static/media/img8.png": "/react-clicky-game/static/media/img8.97bebe39.png",
+    "static/media/img9.png": "/react-clicky-game/static/media/img9.3ed3333a.png"
+  }
+}
