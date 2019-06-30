@@ -1,23 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+function clickHandler(event) {
+  console.log(event.target.src);
+}
 
 function App() {
+  const images = [
+    "img1",
+    "img2",
+    "img3",
+    "img4",
+    "img5",
+    "img6",
+    "img7",
+    "img8",
+    "img9",
+    "img10",
+    "img11",
+    "img12"
+  ];
+  const listItems = images.map(image => (
+    <div onClick={clickHandler} class="col-md-3 col-sm-4 col-xs-6">
+      <img className="images" src={require(`./images/${image}.png`)} alt="" />
+    </div>
+  ));
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="container">
+          <div className="row">{listItems}</div>
+        </div>
       </header>
     </div>
   );
