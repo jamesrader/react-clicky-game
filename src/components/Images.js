@@ -17,6 +17,7 @@ class Item extends React.Component {
       console.log("You lose!");
     }
   }
+
   render() {
     return (
       <div className="col-md-3 col-sm-4 col-xs-6">
@@ -34,24 +35,31 @@ class Item extends React.Component {
 }
 
 class ImagesContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = arrayOfImages;
+    this.randomizeImages = this.randomizeImages.bind(this);
+  }
+
+  randomizeImages() {
+    console.log("HERE!!!");
+    console.log(arrayOfImages);
+    var array = arrayOfImages.imageArray;
+    for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    arrayOfImages = { imageArray: array };
+    console.log(array);
+    this.setState({ arrayOfImages });
+  }
+
   render() {
-    var arr = [
-      "img1",
-      "img2",
-      "img3",
-      "img4",
-      "img5",
-      "img6",
-      "img7",
-      "img8",
-      "img9",
-      "img10",
-      "img11",
-      "img12"
-    ];
     return (
-      <div className="row">
-        {arr.map(item => (
+      <div onClick={this.randomizeImages} className="row">
+        {this.state.imageArray.map(item => (
           <Item key={item} value={item} />
         ))}
       </div>
@@ -68,5 +76,24 @@ class Content extends React.Component {
     );
   }
 }
+
+let arrayOfImages = {
+  imageArray: [
+    "img1",
+    "img2",
+    "img3",
+    "img4",
+    "img5",
+    "img6",
+    "img7",
+    "img8",
+    "img9",
+    "img10",
+    "img11",
+    "img12"
+  ]
+};
+
+//randomizeImages();
 
 export default ImagesContainer;
